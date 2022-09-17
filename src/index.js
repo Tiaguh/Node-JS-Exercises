@@ -125,4 +125,6 @@ async function citiesOfMaranhao() {
 
 
 
+
+
 // O parâmetro 'states' diz ao método o que eu quero usar dentro do arquivo JSON.
