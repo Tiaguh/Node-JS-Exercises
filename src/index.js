@@ -121,7 +121,7 @@ async function citiesOfMaranhao() {
 
 // citiesOfMaranhao();
 
-// Exercicio 07
+// Exercicio 07 ..............
 
 
 
