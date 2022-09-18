@@ -2,7 +2,7 @@ import { promises as fs } from 'fs';
 
 // Exercício 01 
 
-async function getDataJson() {
+async function getDataJson() { // Buscar o arquivo json e guardar em uma variavel
     try {
         const data = JSON.parse(await fs.readFile('./src/estados-cidades-atividade.json'));
 
@@ -21,16 +21,15 @@ async function getStateName() {
     const data = await getDataJson();
 
     const allStates = data.map((states) => {
-        return {
-            name: states.nome
-        }
+        return states.nome
     });
 
     console.log(`Estados Do Brasil: \n `);
 
     allStates.forEach(allStatesClean => {
-        console.log(`${allStatesClean.name}`);
+        console.log(allStatesClean);
     });
+
 }
 
 // getStateName();
@@ -73,7 +72,6 @@ async function getStateFewerLetters() {
     allStatesOrder.forEach(states => {
         console.log(states);
     });
-
 }
 
 // getStateFewerLetters();
@@ -107,9 +105,9 @@ async function citiesOfMaranhao() {
     const Maranhao = data.filter((state) => {
         return state.nome === "Maranhão"
     });
-    
+
     const cities = Maranhao[0].cidades
-    
+
     const MaranhaoClean = cities.filter((city) => {
         return city.length > 6
     });
@@ -121,10 +119,43 @@ async function citiesOfMaranhao() {
 
 // citiesOfMaranhao();
 
-// Exercicio 07 ..............
+// Exercicio 07
 
+async function numberCitiesStates() {
+    const data = await getDataJson();
 
+    const cidades = data.map((cities)=>{
+        return{
+            state: cities.nome,
+            city: cities.cidades.length
+        }
+    })  
 
+    cidades.forEach((cities)=>{
+        console.log(`O estado ${cities.state} tem ${cities.city} cidades`);
+    })
+}
 
+// numberCitiesStates();
+
+async function citiesOfBahia() {
+    const data = await getDataJson();
+
+    const Maranhao = data.filter((state) => {
+        return state.nome === "Bahia"
+    });
+
+    const cities = Maranhao[0].cidades
+
+    const MaranhaoClean = cities.filter((city) => {
+        return city.length < 5
+    });
+
+    MaranhaoClean.forEach((states => {
+        console.log(states);
+    }));
+}
+
+// citiesOfBahia();
 
 // O parâmetro 'states' diz ao método o que eu quero usar dentro do arquivo JSON.
