@@ -138,6 +138,8 @@ async function numberCitiesStates() {
 
 // numberCitiesStates();
 
+// Exercicio 08
+
 async function citiesOfBahia() {
     const data = await getDataJson();
 
