@@ -1,12 +1,12 @@
 <h2>Exercícios de NodeJS!</h2>
 
-<h4>Exercícios propostos pelo Professor Luís Felipe na materia de Programação Web II.</h4>
+<p>Exercícios propostos pelo Professor Luís Felipe na materia de Programação Web II.</p>
 
-<h4>O objetivo da atividade era fazer o tratamento de um arquivo JSON com **métodos de array** extraindo somente os dados que fossem necessários em cada questão.</h4>
+<p>O objetivo da atividade era fazer o tratamento de um arquivo JSON com <strong>métodos de array</strong> extraindo somente os dados que fossem necessários em cada questão.</p>
 
 <h2>Exercícios</h2>
 
-<div align=left font>
+<div align=left>
 
 1. Criar uma função que irá realizar a leitura do arquivo JSON para receber as informações e poder retornar os dados numa variável que for necessário.<br>
 2. Criar uma função que liste o nome de todos os estados salvos no arquivo.<br>
@@ -21,7 +21,7 @@
 
 <div align=center>
 
-  <img src="https://logospng.org/download/node-js/logo-node-js-256.png" width=200>
+  <img src="https://miro.medium.com/max/600/0*kjOwhsnRP6o9upOd.png" width=420>
   <img src="https://devtools.com.br/blog/wp-content/uploads/2020/12/json.png" width=420>
 
 </div>
