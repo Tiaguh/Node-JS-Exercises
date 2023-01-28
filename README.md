@@ -22,6 +22,5 @@
 <div align=center>
 
   <img src="https://miro.medium.com/max/600/0*kjOwhsnRP6o9upOd.png" width=420>
-  <img src="https://devtools.com.br/blog/wp-content/uploads/2020/12/json.png" width=420>
 
 </div>
